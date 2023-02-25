@@ -1,0 +1,50 @@
+/*----------------------------- 헤더 전체 컨테이너 박스 --------------------------------*/
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x:hidden ;
+}
+
+/*------------- 마퀴태그효과 ---------------*/
+
+/* 컨테이너 */
+.marquee--wrap {
+  width: 5000px;
+  height: 36px;
+}
+
+/* 마퀴 배경색 */
+.marquee--bg-bar {
+  background-color: #606060;
+}
+
+/* 감싸는 ul부분 */
+.marquee--list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+/* li 요소들 */
+.list__item {
+  width:4%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 0px 2px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 36px
+}
+
+
+/*------------- 헤더 ---------------*/
+
+.header-top a img {}
+
+
+/*-------------- 메뉴 ---------------*/

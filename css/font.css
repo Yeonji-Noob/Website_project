@@ -1,0 +1,14 @@
+/********************************* 
+  css/fonts.css
+*********************************/
+/*********************************
+개요
+기본 글꼴: 구글 웹폰트 사용
+-영문: Inter
+-한글: Noto Sans KR */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html {font-family:'Inter','Noto Sans KR',sans-serif;}
