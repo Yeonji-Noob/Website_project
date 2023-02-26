@@ -55,7 +55,7 @@
         </ul>
       </div>
 
-      <!-- 헤더  -->
+      <!----------------------------------------- 헤더  ----------------------------------------->
       <header>
         <div class="header-box">
           <div class="header-top">
@@ -63,10 +63,10 @@
 
 
             
-            <div class="menu-top">
+            <div class="header--menu-top">
               <li>
                 <a href="#">신상품</a>
-                <img src="./images/NEW.png" alt="NEW"/>
+                <img src="./images/new.svg" alt="NEW"/>
                 <a class="tv" href="#">TV</a>
                 <a class="mag" href="#">매거진</a>
                 <a class="event" href="#">기획전 / 이벤트</a>
@@ -75,17 +75,13 @@
 
 
 
-            <div class="info">
-              <div class="login">
-                <img src="./images/login.png" alt="로그인" />
+            <div class="header--info">
+              <div class="info">
+                <img src="./images/login.svg" alt="로그인" />
                 <a href="#"><p>로그인</p></a>
-              </div>
-              <div class="mypage">
-                <img src="./images/mypage.png" alt="마이페이지"/>
+                <img src="./images/mypage.svg" alt="마이페이지"/>
                 <a href="#"><p>마이페이지</p></a>
-              </div>
-              <div class="basket">
-                <img src="./images/cart.png" alt="장바구니" />
+                <img src="./images/cart.svg" alt="장바구니" />
                 <a href="#"><p>장바구니</p></a>
               </div>
             </div>
@@ -93,9 +89,13 @@
 
 
 
-
-          <div class="search">
-            <img src="./images/search.png" alt="search">
+          <div class="header--line-container">
+            <div class="search">
+              <img src="./images/search.svg" alt="search">
+            </div>
+            <form action="." method="post">
+              <input class="search-txt" type="text">
+            </form>
           </div>
 
 
@@ -103,57 +103,61 @@
 
           <div class="menu">
             <div class="mainmenu-container">
-              <ul class="mainmenu">
-                <li>
+              <ul class="mainmenu-box">
+                <li class="mainmenu">
                   <a href="#">건프라</a>
                   <div>
                     <ul class="submenu subbg">
-                      <a href="#">등급별</a>
-                      <ul class="sub">
-                        <li><a href="#">HG</a></li>
-                        <li><a href="#">RG</a></li>
-                        <li><a href="#">MG</a></li>
-                        <li><a href="#">PG</a></li>
-                        <li><a href="#">RE / 100</a></li>
-                        <li><a href="#">메가사이즈 모델</a></li>
-                        <li><a href="#">SDCS / SDEX</a></li>
-                        <li><a href="#">SD</a></li>
-                        <li><a href="#">옵션파츠</a></li>
-                        <li><a href="#">그 외</a></li>
-                      </ul>
-                    </ul>
-                    <ul class="submenu subbg">
-                      <a href="#">작품별</a>
-                      <ul class="sub">
-                        <li><a href="#">기동전사 건담 수성의 마녀</a></li>
-                        <li><a href="#">기동전사 건담</a></li>
-                        <li><a href="#">기동전사 건담 역습의 샤아</a></li>
-                        <li><a href="#">기동전사 건담 UC</a></li>
-                        <li><a href="#">기동전사 건담 섬광의 하사웨이</a></li>
-                        <li><a href="#">기동전사 건담 SEED</a></li>
-                        <li><a href="#">기동전사 건담 OO</a></li>
-                        <li><a href="#">기동전사 건담 철혈의 오펀스</a></li>
-                        <li><a href="#">삼국창걸전 / SD 건담 월드 히어로즈</a></li>
-                        <li><a href="#">그 외</a></li>
+                      <ul class="sub flex sub-margin">
+                        <ul class="sub--box">
+                          <a href="#">등급별</a>
+                          <li><a href="#">HG</a></li>
+                          <li><a href="#">RG</a></li>
+                          <li><a href="#">MG</a></li>
+                          <li><a href="#">PG</a></li>
+                          <li><a href="#">RE / 100</a></li>
+                          <li><a href="#">메가사이즈 모델</a></li>
+                          <li><a href="#">SDCS / SDEX</a></li>
+                          <li><a href="#">SD</a></li>
+                          <li><a href="#">옵션파츠</a></li>
+                          <li><a href="#">그 외</a></li>
+                        </ul>
+
+                        <ul class="sub--box">
+                          <a href="#">작품별</a>
+                          <li><a href="#">기동전사 건담 수성의 마녀</a></li>
+                          <li><a href="#">기동전사 건담</a></li>
+                          <li><a href="#">기동전사 건담 역습의 샤아</a></li>
+                          <li><a href="#">기동전사 건담 UC</a></li>
+                          <li><a href="#">기동전사 건담 섬광의 하사웨이</a></li>
+                          <li><a href="#">기동전사 건담 SEED</a></li>
+                          <li><a href="#">기동전사 건담 OO</a></li>
+                          <li><a href="#">기동전사 건담 철혈의 오펀스</a></li>
+                          <li><a href="#">삼국창걸전 / SD 건담 월드 히어로즈</a></li>
+                          <li><a href="#">그 외</a></li>
+                        </ul>
                       </ul>
                     </ul>
                   </div>
 
                 </li>
-                <li class="mainmenu">
+                <li class="mainmenu mainmenu--2">
                   <a href="#">애니프라</a>
-                  <!-- <ul>
+                  <ul class="submenu subbg">
                     <a href="#">등급별</a>
-                    <li><a href="#">EG</a></li>
-                    <li><a href="#">HG</a></li>
-                    <li><a href="#">RG</a></li>
-                    <li><a href="#">Figure-rise 시리즈</a></li>
-                    <li><a href="#">포켓프라</a></li>
-                    <li><a href="#">30 MINUTES MISSIONS</a></li>
-                    <li><a href="#">SDCS / SDEX</a></li>
-                    <li><a href="#">그 외</a></li>
-                  </ul> -->
-                  <!-- <ul>
+                    <ul class="sub">
+                      <li><a href="#">EG</a></li>
+                      <li><a href="#">HG</a></li>
+                      <li><a href="#">RG</a></li>
+                      <li><a href="#">Figure-rise 시리즈</a></li>
+                      <li><a href="#">포켓프라</a></li>
+                      <li><a href="#">30 MINUTES MISSIONS</a></li>
+                      <li><a href="#">SDCS / SDEX</a></li>
+                      <li><a href="#">그 외</a></li>
+                    </ul>
+                    
+                  </ul> 
+                  <ul class="submenu subbg">
                     <a href="#">작품별</a>
                     <li><a href="#">드래곤볼</a></li>
                     <li><a href="#">원피스</a></li>
@@ -164,11 +168,11 @@
                     <li><a href="#">카카오 프렌즈</a></li>
                     <li><a href="#">포켓몬스터</a></li>
                     <li><a href="#">그 외</a></li>
-                  </ul> -->
+                  </ul>
                 </li>
-                <li class="mainmenu">
+                <li class="mainmenu mainmenu--3">
                   <a href="#">피규어</a>
-                  <!-- <ul>
+                  <ul class="submenu subbg">
                     <a href="#">타마시이네이션즈</a>
                     <a href="#">등급별</a>
                     <li><a href="#">ROBOT혼 시리즈</a></li>
@@ -180,26 +184,26 @@
                     <li><a href="#">PROPLICA</a></li>
                     <li><a href="#">NXEDGE STYLE</a></li>
                     <li><a href="#">그 외</a></li>
-                  </ul> -->
+                  </ul>
                 </li>
-                <li class="mainmenu">
+                <li class="mainmenu mainmenu--4">
                   <a href="#">토이</a>
-                  <!-- <ul>
+                  <ul class="submenu subbg">
                     <a href="#">캐릭터토이</a>
                     <li><a href="#">파워레인저 시리즈</a></li>
                     <li><a href="#">가면라이더 시리즈</a></li>
                     <li><a href="#">디지몬 시리즈</a></li>
                     <li><a href="#">다마고치</a></li>
                     <li><a href="#">그 외</a></li>
-                  </ul> -->
-                  <!-- <ul>
+                  </ul>
+                  <ul class="submenu subbg">
                     <a href="#">하비토이</a>
                     <li><a href="#">나노블록</a></li>
                     <li><a href="#">해체퍼즐</a></li>
                     <li><a href="#">믹스워치</a></li>
                     <li><a href="#">오델로</a></li>
                   </ul>
-                  <ul>
+                  <ul class="submenu subbg">
                     <a href="#">카테고리별</a>
                     <li><a href="#">로봇</a></li>
                     <li><a href="#">변신</a></li>
@@ -209,18 +213,18 @@
                     <li><a href="#">라이프</a></li>
                     <li><a href="#">그 외</a></li>
                   </ul>
-                  <ul>
+                  <ul class="submenu subbg">
                     <a href="#">나이대별</a>
                     <li><a href="#">0 ~ 2세</a></li>
                     <li><a href="#">3 ~ 5세</a></li>
                     <li><a href="#">6 ~ 8세</a></li>
                     <li><a href="#">9 ~ 13세</a></li>
                     <li><a href="#">14세 이상</a></li>
-                  </ul> -->
+                  </ul>
                 </li>
-                <li class="mainmenu">
+                <li class="mainmenu mainmenu--5">
                   <a href="#">기타</a>
-                  <!-- <ul>
+                  <ul class="submenu subbg">
                     <a href="#">공구 & 그 외</a>
                     <li><a href="#">프라모델 제작 공구</a></li>
                     <li><a href="#">프라모델 서적</a></li>
@@ -228,7 +232,7 @@
                     <li><a href="#">건담 데칼</a></li>
                     <li><a href="#">베이스</a></li>
                   </ul>
-                  <ul>
+                  <ul class="submenu subbg">
                     <a href="#">캔디</a>
                     <li><a href="#">포켓몬 스케일 월드</a></li>
                     <li><a href="#">쿠너츠</a></li>
@@ -238,25 +242,25 @@
                     <li><a href="#">G프레임 시리즈</a></li>
                     <li><a href="#">그 외</a></li>
                   </ul>
-                  <ul>
+                  <ul class="submenu subbg">
                     <a href="#">캡슐</a>
                     <li><a href="#">MOBILE SUIT ENSEMBLE</a></li>
                     <li><a href="#">가샤폰 전사</a></li>
                     <li><a href="#">허그코트</a></li>
                     <li><a href="#">그 외</a></li>
                   </ul>
-                  <ul>
+                  <ul class="submenu subbg">
                     <a href="#">그 외</a>
                     <li><a href="#">그 외</a></li>
                   </ul> -->
                   <li class="mainmenu">
-                    <a class="pb" href="#">프리미엄반다이</a>
+                    <a class="pb mainmenu--6" href="#" style="color: #f9bb00;">프리미엄반다이</a>
                   </li>
                 </li>
               </ul>
             </div>
   
-            <div class="submenu-2">
+            <div class="mainmenu-2">
                 <a href="#">브랜드</a>
                 <a href="#">멤버쉽 / 쿠폰</a>
                 <a href="#">건담베이스</a>

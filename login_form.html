@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset_css.css" />
+    <link rel="stylesheet" href="./css/login_form.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <!-- ionic framework component -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <!-- script -->
+    <script src="./script/login_form.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-form--wrap">
+        <img src="./images/logo.png" alt="로고" />
+  
+        <div class="login-form">
+          <div class="login-container">
+            <p>Bandai Namco Korea Mall</p>
+            <p>로그인</p>
+            <p>반다이 남코 코리아의 다양한 서비스와 혜택을 누리세요!</p>
+  
+            <!-- 아이디 -->
+            <ion-item class="id" fill="outline">
+              <ion-label color="danger" position="floating">ID</ion-label>
+              <ion-input color="medium" placeholder="아이디를 입력하세요">
+              </ion-input>
+            </ion-item>
+  
+            <!-- 비밀번호 -->
+            <ion-item class="password" fill="outline">
+              <ion-label color="danger" position="floating">Password</ion-label>
+              <ion-input type="password"
+                color="medium"
+                placeholder="비밀번호를 입력하세요"
+              ></ion-input>
+            </ion-item>
+  
+            <div class="login--lower-text">
+              <div class="auto-Login">
+                <ion-checkbox color="danger" slot="start"> </ion-checkbox>
+                <ion-label> &nbsp;자동 로그인 </ion-label>
+              </div>
+  
+              <p class="find-id">아이디 찾기</p>
+              <p class="find-password">비밀번호 찾기</p>
+            </div>
+  
+            <ion-button size="large" expand="block">로그인</ion-button>
+          </div>
+  
+          <!-------------------------------------->
+          <!-------------최하단 메뉴-------------->
+  
+          <div class="bottom_menu">
+            <p class="sns-text">SNS계정으로 로그인하기</p>
+  
+            <div class="sns-logo">
+              <img src="./images/kakaotalk.svg" alt="" />
+              <img src="./images/facebook.svg" alt="" />
+              <img src="./images/google.svg" alt="" />
+              <img src="./images/apple.svg" alt="" />
+            </div>
+          </div>
+  
+          <ion-button class="signup-button" color="medium" expand="block">회원가입 하기</ion-button>
+  
+          <ion-button class="order-inquiry" color="light" expand="block">비회원 주문조회</ion-button>
+  
+          <!-------------------------------------->
+          <!-------------------------------------->
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

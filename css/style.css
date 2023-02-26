@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow-x:hidden ;
+  height: 100%;
+  overflow: hidden;
 }
 
 /*------------- 마퀴태그효과 ---------------*/
@@ -31,7 +32,7 @@
 
 /* li 요소들 */
 .list__item {
-  width:4%;
+  width: 4%;
   flex-grow: 0;
   flex-shrink: 0;
   text-align: center;
@@ -44,7 +45,207 @@
 
 /*------------- 헤더 ---------------*/
 
-.header-top a img {}
+header {
+  width: 100%;
+  height: 229px;
+  background-color: #383838;
+}
 
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+
+
+
+/* ---로고/최상단메뉴/내정보--- */
+.header-top {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 40px;
+  width: 100%;
+}
+
+/* 로고 */
+.header-top a img {
+  width: 133px;
+  height: 78px;
+}
+
+/* 최상단메뉴 */
+.header--menu-top {
+  width: 600px;
+  height: 70px;
+
+}
+
+.header--menu-top li {
+  display: flex;
+}
+
+/* new.svg */
+.header--menu-top li img {
+  margin-left: -40px;
+}
+
+
+.header--menu-top li>a {
+  display: block;
+  text-align: center;
+  line-height: 75px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 47px;
+  color: #fff;
+}
+
+/* '신상품' 글자 */
+.header--menu-top a:first-child {
+  margin-left: 51px;
+}
+
+/* 'TV' 글자 */
+.header--menu-top a:nth-child(3) {
+  margin-left: 42px;
+}
+
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+
+
+
+/* 내정보(로그인,마이페이지,장바구니) */
+.header--info {
+  display: flex;
+  justify-content: end;
+  width: 48%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  width: 34%;
+  height: 30px;
+  margin-top: 23px;
+}
+
+.header--info a {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  margin-right: 10px;
+  line-height: 50px;
+}
+
+.header--info img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+
+
+/* 구분선과 서치아이콘 */
+
+/* 구분선 */
+.header--line-container {
+  width: 94%;
+  height: 60px;
+  margin-left: 40px;
+  border-bottom: 1px #dadada solid;
+}
+
+/* 검색입력창 */
+.search-txt {
+  position: relative;
+  top: 25px;
+  float: right;
+  right: 8px;
+  background-color: #383838;
+  color: #fff;
+}
+
+/* 서치아이콘 */
+.search img {
+  position: relative;
+  top: 30px;
+  right: 2px;
+  float: right;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 
 /*-------------- 메뉴 ---------------*/
+.menu {
+  height: 20px;
+  margin-top: 11px;
+  margin-left: 40px;
+  width: 94%;
+}
+
+.mainmenu-container {
+  width: 100%;
+
+}
+
+.mainmenu-box {
+  display: flex;
+}
+
+.mainmenu {}
+
+
+.flex {
+  display: flex;
+}
+
+.sub-margin {
+  margin-top: 40px;
+}
+
+.sub--box>a {
+  font-size: 20px;
+}
+
+.sub--box li {margin-top: 10px; margin-right: 20px;}
+
+/*------ 메인메뉴간의 간격 조정 ------*/
+
+.mainmenu--2 {
+  margin-left: -315px;
+}
+
+.mainmenu--3 {
+  margin-left: -90px;
+}
+
+.mainmenu--4 {
+  margin-left: -90px;
+}
+
+.mainmenu--5 {
+  margin-left: -65px;
+}
+
+.mainmenu--6 {
+  margin-left: -130px;
+}
+
+/*------------------------------------*/
+
+/* 메인메뉴 글자 색상 */
+
+.mainmenu>a {
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+
+.submenu-2 {position: absolute;}
