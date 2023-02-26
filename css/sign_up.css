@@ -1,12 +1,20 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f6f7;
+}
 /* //컨테이너// */
 
 .signup-container {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f5f6f7;
+
 }
 
 .signup {
@@ -23,7 +31,6 @@
 .signup-text {
   display: grid;
   grid-template: 1fr 1fr 1fr;
-  background-color:
 }
 
 /*------// 회원가입 요소들 //------*/
@@ -167,4 +174,308 @@ button {
 
 .sns-logo img {
   cursor: pointer;
+}
+/* ----------미디어쿼리---------- */
+
+
+
+@media (max-width: 420px) {
+
+
+  .wrap {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  .signup-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+  }
+
+
+  .signup {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-top: 30px;
+  }
+
+
+  /* 'Bandai Namco Korea Mall' 텍스트 */
+  .signup-text p:first-child {
+    position: absolute;
+    font-size: large;
+    grid-column: 1;
+    font-size: 15px;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+    line-height: 0px;
+    padding-left: 0px;
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+
+  /* '신규등록' 텍스트 */
+  .signup-text p:nth-child(2) {
+    grid-column: 1;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    padding-left: 0px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  /* 반다이 남코 로고 */
+  .signup-text img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    grid-column: 2;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  /*---------------------- 진행 바 -----------------------*/
+
+  /* 진행 바 컨테이너 */
+  .progress-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* 진행 바 */
+  progress {
+    width: 300px;
+    height: 20px;
+    margin: 0 auto;
+    accent-color: #e60012;
+    grid-column: 1/3;
+    margin-top: 10px;
+  }
+
+  /* '등록시작' / '완료' 텍스트 */
+  .progress-bar p {
+    padding-top: 2px;
+    font-size: 12px;
+  }
+
+  /* '등록시작' 텍스트 */
+  .progress-bar p:nth-child(2) {
+    padding-left: 10PX;
+  }
+
+  /* '완료' 텍스트 */
+  .progress-bar p:last-child {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  /*----------- 아이디 / 비밀번호 ------------*/
+
+  .id-password {
+    font-size: 13.5px;
+    width: 300px;
+    height: 280px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .id-password p {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+  }
+
+  .id-password p:nth-child(5) {
+    color: #7d7d7d;
+    padding-top: 0px;
+  }
+
+  .id-password input {
+    padding: 5px;
+    width: 300px;
+    border: 1px #3a3a3a solid;
+    border-radius: 5px;
+  }
+
+
+}
+
+
+@media (max-width: 300px) {
+
+  .signup-container {
+    position: absolute;
+    top: 0%;
+    left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 110px;
+  }
+
+  .signup {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 200px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-top: 30px;
+  }
+
+
+  /* 'Bandai Namco Korea Mall' 텍스트 */
+  .signup-text p:first-child {
+    display: none;
+  }
+
+  /* '신규등록' 텍스트 */
+  .signup-text p:nth-child(2) {
+    grid-column: 1;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-left: 170px;
+  }
+
+  /* 반다이 남코 로고 */
+  .signup-text img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    grid-column: 2;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 52px;
+    margin-right: 0px;
+    margin-left: 115px;
+  }
+
+  /* 진행 바 */
+  progress {
+    width: 210px;
+    height: 20px;
+    margin: 0 auto;
+    accent-color: #e60012;
+    grid-column: 1/3;
+    margin-top: 10px;
+    margin-right: 35px;
+  }
+
+  /* '등록시작' / '완료' 텍스트 */
+  .progress-bar p {
+    padding-top: 2px;
+    font-size: 12px;
+  }
+
+  /* '등록시작' 텍스트 */
+  .progress-bar p:nth-child(2) {
+    padding-left: 75px;
+    padding-top: 2px;
+  }
+
+  /* '완료' 텍스트 */
+  .progress-bar p:last-child {
+    text-align: right;
+    padding-right: 34px;
+    padding-top: 1px;
+  }
+
+  /*----------- 아이디 / 비밀번호 ------------*/
+
+  .id-password {
+    font-size: 12px;
+    width: 300px;
+    height: 280px;
+    padding-top: 10px;
+    padding-left: 70px;
+  }
+
+  .id-password p {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+  }
+
+  .id-password p:nth-child(5) {
+    color: #7d7d7d;
+    padding-top: 0px;
+  }
+
+  .id-password input {
+    padding: 5px;
+    width: 220px;
+    border: 1px #3a3a3a solid;
+    border-radius: 5px;
+  }
+
+  .sns-text {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    color: #787878;
+  }
+
+  .sns-logo {
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  button {
+    font-size: 15px;
+    color: white;
+    background-color: #e60012;
+    border: 1px #e60012 solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 1px 5px #787878;
+    letter-spacing: 5px;
+    margin-left: 40px;
+  }
+
+  .sns-text {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+    color: #787878;
+    margin-left: 40px;
+  }
+
+  .sns-logo {
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 38px;
+    justify-content: space-between;
+  }
+
 }
