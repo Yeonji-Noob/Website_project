@@ -26,7 +26,7 @@
   position: relative;
   width: 100px;
   margin: 0 auto;
-  top: 25px;
+  top: 30px;
 }
 
 
@@ -110,20 +110,15 @@ ion-checkbox {
   line-height: 20px;
 }
 
-.find-id {
-  padding-top: 3px;
-  width: 120px;
-  text-align: end;
-  cursor: pointer;
-}
 
 .find-password {
   position: relative;
-  top: -2px;
-  font-size: 12px;
+  top: -12px;
+  right: 39px;
+  font-size: 12px !important;
   font-weight: bold;
   color: #787878;
-  width: 90px;
+  width: 250px;
   text-align: end;
   cursor: pointer;
 }
@@ -185,6 +180,9 @@ ion-checkbox {
     margin-bottom: 5px;
   }
 
+  .login-container p:nth-child(2) {
+    font-size: 25px;
+  }
 
   .login-form--wrap {
     width: 100%;
@@ -199,14 +197,10 @@ ion-checkbox {
     display: none;
   }
 
-  .find-id {
-    display: none;
-  }
-
 
 
   .auto-Login {
-    font-size: 15px;
+    font-size: 14px;
     width: 120px;
     color: #787878;
     font-weight: bold;
@@ -214,7 +208,7 @@ ion-checkbox {
   }
 
   .login-container {
-    margin-top: 20px;
+    margin-top: -15px;
     border: none;
     border-radius: none;
     padding: 25px;
@@ -254,11 +248,74 @@ ion-checkbox {
 
 
 
+@media (max-width: 1024px) {
+
+  .find-password {
+    top: -3px;
+  }
+
+}
+
+@media (max-width: 1021px) {
+
+  .find-password {
+    top: -13px;
+  }
+
+}
+
+
+@media (max-width: 412px) {
+
+
+  .find-password {
+    position: relative;
+    top: -12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #787878;
+    width: 120px;
+    left: 89px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .find-password {
+    position: relative;
+    margin-top: -13px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #787878;
+    width: 120px;
+    left: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .find-password {
+    top: -13px;
+  }
+
+  .find-password {
+    position: relative;
+    top: -12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #787878;
+    width: 120px;
+    left: 51px;
+  }
+
+}
+
+
+/* 갤폴드 */
+
 @media (max-width: 280px) {
 
-  .login-form--wrap>img {
-    display: none;
-  }
 
   .login--lower-text {
     display: flex;
@@ -266,20 +323,84 @@ ion-checkbox {
     padding-top: 5px;
   }
 
+  .login-container p:nth-child(2) {
+    font-size: 20px;
+  }
+
+
+  .login-container {
+    margin-top: 40px;
+    border: 3px #e60012 solid;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 1px 5px #787878;
+    background-color: #fff;
+    margin-bottom: 15px;
+  }
+
+  ion-label {
+    font-size: 13px;
+  }
+
+  .signup-button {
+    font-size: 12px;
+  }
+
+  .order-inquiry {
+    font-size: 12px
+  }
+
   .sns-text {
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     padding-top: 0px;
     color: #787878;
   }
+
+  .find-password {
+    display: none;
+  }
+
+}
+
+
+@media (max-height: 697px) {
+
+  .find-password {
+    top: 2px;
+  }
+
+  .login-container p:nth-child(2) {
+    font-size: 25px;
+  }
+
+  .login-container {
+    margin-top: 0px;
+    border: 5px #e60012 solid;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 1px 5px #787878;
+    background-color: #fff;
+  }
+
 }
 
 
 @media (min-height: 700px) {
 
-
   .login-form--wrap>img {
-    display: none;
+    position: relative;
+    width: 90px;
+    margin: 0 auto;
+    top: 20px;
+
+  }
+
+
+  .login-container p:nth-child(2) {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 50px;
   }
 
   .login-form--wrap {
@@ -304,7 +425,7 @@ ion-checkbox {
 @media (max-height: 600px) {
 
   .login-form--wrap>img {
-    display: none;
+    top: 20px;
   }
 
   .login-container p:first-child {
@@ -322,8 +443,7 @@ ion-checkbox {
     margin-bottom: 20px;
   }
 
-  .find-id {
-    display: none;
+
   }
 
   .login-form--wrap {
@@ -332,4 +452,31 @@ ion-checkbox {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+
+
+  @media (max-height: 670px) { 
+
+    .login-form--wrap>img {
+      top: 80px;
+    }
+
+    .login-container p:nth-child(2) {
+      display: none;
+    }
+
+    .login-form--wrap {
+      width: 260px;
+      margin: 0 auto;
+    }
+
+
+    .login-container {
+      margin-top: 50px;
+      border: 5px #e60012 solid;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 1px 5px #787878;
+      background-color: #fff;
+    }
+
+  }
