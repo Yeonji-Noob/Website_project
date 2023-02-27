@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/reset_css.css">
   <link rel="stylesheet" href="./css/sign_up.css">
   <link rel="stylesheet" href="./css/font.css">
+  <!-- fontAwesome -->
+  <script src="https://kit.fontawesome.com/41316602b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrap">
@@ -56,11 +58,15 @@
               <p>아이디</p>
               <input type="text" name="userName" placeholder="아이디를 입력해주세요">
               <p>비밀번호</p>
-              <input type="password" name="userPassword" placeholder="비밀번호를 입력해주세요">
+              <input class="input-pw" type="password" name="userPassword" placeholder="비밀번호를 입력해주세요"
+              onchange="checkPw()">
               <p>※ 영문, 숫자, 특수문자 포함 8글자 이상</p>
               <p>비밀번호(확인용)</p>
-              <input type="password" name="userPassword" placeholder="비밀번호를 한번 더 입력해주세요">
+              <input class="input-pw2" type="password" name="userPassword" placeholder="비밀번호를 한번 더 입력해주세요"
+              onchange="checkPw()">
+              <p class="check-password"></p>
             </div>
+
             <!-------------------------------------->
             <!-------------최하단 메뉴-------------->
     
@@ -84,5 +90,7 @@
           </div>
         </div> 
   </div>
+
+  <script src="./script/sign_up.js" defer></script>
 </body>
 </html>

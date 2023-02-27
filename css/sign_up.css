@@ -116,7 +116,7 @@ progress {
 
 .id-password p {
   padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 2px;
   padding-bottom: 3px;
 }
 
@@ -132,7 +132,7 @@ progress {
   border-radius: 5px;
 }
 
-
+.check-password {}
 
 /*----------------최하단 메뉴----------------*/
 
