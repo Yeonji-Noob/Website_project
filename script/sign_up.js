@@ -1,8 +1,7 @@
-let checkPw = () => {
-  /* 클래스나 ID는 불러오는게 자주 반복되고 그러면 식이 빨주노초파남보색으로 개길어지니까 변수선언부터 해줍니다 */
+// --------------------------------------------------------------- //
 
-  /* 굳이 전역변수로 쓸 이유가 없으면 지역변수로 쓰는게 낫다고 해서
-  함수 안에서 선언함 */
+let checkPw = () => {
+  /* 변수선언 */
 
   let pw1 = document.getElementsByClassName("input-pw")[0].value;
 
@@ -13,7 +12,7 @@ let checkPw = () => {
   // 비밀번호가 일치하지 않으면?
 
   if (pw1 !== pw2) {
-    // 빨간색 글자로 '비밀번호가 일치하지 않습니다' 문구가 뜰 거임
+    // 빨간색 글자로 '비밀번호가 일치하지 않습니다' 문구가 뜰 것
 
     check.style.color = "#e60012";
 
@@ -26,6 +25,68 @@ let checkPw = () => {
   }
 };
 
-//함수실행 ㄱ
+//함수실행
 
-checkPw;
+checkPw();
+
+// --------------------------------------------------------------- //
+
+/* 다음 버튼을 누르면 페이지가 다음 화면으로 바뀜 */
+
+// '다음'버튼
+let nextButton = document.getElementById("button1");
+
+// progress바의 value값
+let progressValue = document.getElementsByTagName("progress").value;
+
+// 아이디/비밀번호 박스
+let idPasswordBox = document.getElementById("id-password");
+
+// 회원약관 박스
+let termsUse = document.getElementById("terms-use");
+
+// 취소&동의 버튼
+let cancelAgreeButton = document.getElementsByClassName("bottom-menu2")[0];
+
+// --------------------------------------------------------------- //
+
+let changePage = () => {
+  nextButton.addEventListener("click", () => {
+    let pwValue = document.getElementsByClassName("input-pw")[0].value;
+
+    let pwValue2 = document.getElementsByClassName("input-pw2")[0].value;
+
+    if (pwValue !== pwValue2) {
+      idPasswordBox.style.display = "block";
+      nextButton.style.display = "block";
+    }
+
+    if (pwValue == pwValue2 && pwValue.length > 0) {
+      idPasswordBox.style.display = "none";
+      nextButton.style.display = "none";
+
+      termsUse.style.display = "block";
+      termsUse.classList.add("appear");
+
+      cancelAgreeButton.style.display = "inline-block";
+    }
+  });
+};
+
+changePage();
+
+// --------------------------------------------------------------- //
+
+/*------------------ 진행바 채우기 --------------------------- */
+
+let progressChange = () => {
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("button1").addEventListener("click", () => {
+      document.getElementById("progress").value += 50;
+    });
+  });
+};
+
+progressChange();
+
+/*------------------ --------------------------- */
