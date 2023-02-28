@@ -3,11 +3,12 @@
   height: 100%;
   background-color: #f5f6f7;
 }
+
 /* //컨테이너// */
 
 .signup-container {
   position: absolute;
-    top: 50%;
+  top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   display: flex;
@@ -132,7 +133,45 @@ progress {
   border-radius: 5px;
 }
 
-.check-password {}
+/*---------------- 이용약관 ----------------*/
+
+.terms-use {
+  font-size: 13.5px;
+  width: 440px;
+  height: 280px;
+  padding-top: 8px;
+  padding-left: 5px;
+  display: none;
+}
+
+.terms-use--scroll {
+  width: 400px;
+  height: 100px;
+  background-color: wheat;
+  overflow: auto;
+}
+
+.agree-text {
+  padding-top: 5px;
+  padding-left: 16px;
+  padding-bottom: 5px;
+}
+
+.agree-text ion-label {
+  position: absolute;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+
+ion-content {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  left: 15px;
+  top: -5px;
+
+}
 
 /*----------------최하단 메뉴----------------*/
 
@@ -145,17 +184,38 @@ progress {
   margin: 0 auto;
 }
 
-button {
+/* 다음 버튼 */
+
+.button1 {
+  --background: #e60012;
   font-size: 15px;
   color: white;
-  background-color: #e60012;
-  border: 1px #e60012 solid;
-  border-radius: 5px;
-  padding: 10px;
+  --border: 1px #e60012 solid;
+    --border-radius: 10px;
   width: 200px;
-  box-shadow: 0 1px 5px #787878;
   letter-spacing: 5px;
+  margin-bottom: 10px;
+  }
+  
+  /* 취소/동의 버튼 */
+  
+  .bottom-menu2 {
+    display: none;
+  }
+  
+  .bottom-menu2 ion-button {
+    --background: #e60012;
+    font-size: 15px;
+    color: white;
+    --border: 1px #e60012 solid;
+    --border-radius: 10px;
+    width: 180px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
+
 
 .sns-text {
   font-size: 15px;
@@ -175,7 +235,43 @@ button {
 .sns-logo img {
   cursor: pointer;
 }
-/* ----------미디어쿼리---------- */
+
+
+
+/*----- 부드러운 화면전환 효과---- */
+
+.appear {
+
+  animation: fade-in 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ---------텍스트 컬러 체인지--------- */
+
+.redtext {
+
+  color: #e60012;
+
+}
+
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------미디어쿼리--------- */
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
 
 
 
@@ -252,7 +348,7 @@ button {
     margin-right: 10px;
   }
 
-  /*---------------------- 진행 바 -----------------------*/
+    /*--- 진행 바 ---*/
 
   /* 진행 바 컨테이너 */
   .progress-bar {
@@ -287,7 +383,7 @@ button {
     padding-right: 10px;
   }
 
-  /*----------- 아이디 / 비밀번호 ------------*/
+    /*-- 아이디 / 비밀번호 --*/
 
   .id-password {
     font-size: 13.5px;
@@ -317,6 +413,7 @@ button {
 
 
 }
+
 
 
 @media (max-width: 300px) {
@@ -405,7 +502,7 @@ button {
     padding-top: 1px;
   }
 
-  /*----------- 아이디 / 비밀번호 ------------*/
+    /*---- 아이디 / 비밀번호 ------*/
 
   .id-password {
     font-size: 12px;
