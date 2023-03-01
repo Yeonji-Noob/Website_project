@@ -31,13 +31,13 @@ checkPw();
 
 // --------------------------------------------------------------- //
 
+
+
+// --------------------------------------------------------------- //
 /* 다음 버튼을 누르면 페이지가 다음 화면으로 바뀜 */
 
 // '다음'버튼
 let nextButton = document.getElementById("button1");
-
-// progress바의 value값
-let progressValue = document.getElementsByTagName("progress").value;
 
 // 아이디/비밀번호 박스
 let idPasswordBox = document.getElementById("id-password");
@@ -48,8 +48,7 @@ let termsUse = document.getElementById("terms-use");
 // 취소&동의 버튼
 let cancelAgreeButton = document.getElementsByClassName("bottom-menu2")[0];
 
-// --------------------------------------------------------------- //
-
+//함수 시작//
 let changePage = () => {
   nextButton.addEventListener("click", () => {
     let pwValue = document.getElementsByClassName("input-pw")[0].value;
@@ -73,20 +72,42 @@ let changePage = () => {
   });
 };
 
+//함수실행
 changePage();
-
 // --------------------------------------------------------------- //
 
-/*------------------ 진행바 채우기 --------------------------- */
+
+
+// --------------------------------------------------------------- //
+// --------------------------------------------------------------- //
+/*------------------------ 진행바 채우기------------------------- */
+
 
 let progressChange = () => {
-  document.addEventListener("DOMContentLoaded", function (event) {
+  document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("button1").addEventListener("click", () => {
-      document.getElementById("progress").value += 50;
+      let interval = setInterval(() => {
+
+        let progressBar = document.getElementById("progress")
+
+        progressBar.value++;
+
+        if (progressBar.value == 60) {
+          let valueStop = () => {
+            clearInterval(interval);
+          };
+
+          valueStop();
+        }
+      }, 20);
     });
   });
 };
 
+//함수실행
 progressChange();
 
-/*------------------ --------------------------- */
+// --------------------------------------------------------------- //
+// --------------------------------------------------------------- //
+
+
