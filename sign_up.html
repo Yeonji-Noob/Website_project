@@ -154,6 +154,65 @@
             </ion-content>
           </div>
 
+                   <!-------------------------------------->
+          <!-------------------------------------->
+          <!-------------------------------------->
+          <!-------이메일/주소찾기/생년월일------->
+          <!-------------------------------------->
+          <!-------------------------------------->
+          <!-------------------------------------->
+
+          <div class="privacy-container" id="privacy-container">
+            <ion-item>
+              <!-- 이름 입력칸 -->
+              <ion-label position="fixed" color="danger">이름</ion-label>
+              <ion-input placeholder="이름을 입력해주세요"></ion-input>
+            </ion-item>
+
+            <!-- 이메일 입력칸 -->
+            <ion-item>
+              <ion-label position="fixed" color="danger">E-mail</ion-label>
+              <ion-input
+                type="email"
+                placeholder="email@domain.com"
+              ></ion-input>
+            </ion-item>
+
+            <ion-checkbox
+              class="privacy-checkbox"
+              color="danger"
+              slot="start"
+            ></ion-checkbox>
+            <ion-label class="agree-text"
+              >정보/이벤트 메일 수신에 동의합니다.</ion-label
+            >
+
+            <ion-item class="phone">
+              <ion-label position="fixed" color="danger">휴대폰번호</ion-label>
+              <ion-input type="tel" placeholder="000-000-0000"></ion-input>
+            </ion-item>
+
+            <ion-checkbox
+              class="privacy-checkbox"
+              color="danger"
+              slot="start"
+            ></ion-checkbox>
+            <ion-label class="agree-text"
+              >정보/이벤트 SNS 수신에 동의합니다.</ion-label
+            >
+
+            <div class="seach">
+              <input id="find-address" type="text" id="sample5_address" placeholder=""
+              size="50"/>
+              <input id="address-button"
+               type="button"
+                onclick="sample5_execDaumPostcode()"
+                value="주소 검색"/>
+            </div>
+
+          </div>
+
+
           <!-------------------------------------->
           <!-------------최하단 메뉴-------------->
 
