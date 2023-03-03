@@ -111,3 +111,24 @@ progressChange();
 // --------------------------------------------------------------- //
 
 
+// let privacyContainer = document.getElementById("privacy-container");
+
+
+// let checkBox1 = document.getElementById("check1");
+
+// let checkBox2 = document.getElementById("check2");
+
+// let changePage2 = () => {
+
+//   let agreeButton = document.getElementsByClassName("button-native")[0];
+
+
+//   agreeButton.addEventListener("click", () => {
+//     termsUse.style.display = "none";
+
+//     privacyContainer.style.display = "block";
+//     privacyContainer.add("appear");
+
+//     agreeButton.innerHTML = "확 인";
+//   });
+// };
