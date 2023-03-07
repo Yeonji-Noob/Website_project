@@ -122,7 +122,7 @@ header {
 
 .info {
   display: flex;
-    float: right;
+  float: right;
   margin-top: 12px;
   width: 1077px;
   height: 50px;
@@ -181,6 +181,7 @@ header {
 .search-box {
   margin-right: 55px;
 }
+
 /* 서치아이콘 */
 .search img {
   position: relative;
@@ -425,6 +426,7 @@ header {
   }
 
 }
+
 @media (max-width: 1348px) {
 
   .h2-margin-2 {
@@ -439,4 +441,154 @@ header {
     right: -345px;
   }
 
+}
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*----------------------------- 푸터--------------------------------*/
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+
+footer {
+  color: white;
+  height: 400px;
+  width: 100%;
+  background-color: #000000;
+}
+
+/* 푸터 첫번째 행 */
+footer .footer--firstrow {
+  display: flex;
+  padding: 25px;
+  padding-top: 30px;
+  border-bottom: 1px #686868 solid;
+}
+
+/* 푸터로고이미지 */
+footer .footer--firstrow>span {
+  width: 150px;
+  cursor: pointer;
+}
+
+footer .footer--firstrow .footer--right {
+  width: 75%;
+}
+
+footer .footer--firstrow .footer--rightflex {
+  display: flex;
+  margin-top: 2px;
+  width: 40%;
+  float: right;
+}
+
+
+/* 단어 사이 구분선 */
+footer .footer--firstrow .footer--rightflex p:nth-child(n+2) {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+footer .footer--firstrow .footer--rightflex p:nth-child(n+2)::after {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* ---------------- */
+
+
+
+
+
+
+/* 푸터 두번째 행 */
+footer .footer--secondrow {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-right: 35px;
+  padding-bottom: 25px;
+}
+
+footer .footer--secondrow .service-center {
+
+  padding-left: 25px;
+
+}
+
+/* -------------고객센터------------- */
+
+/* 고객센터 제목 */
+footer .footer--secondrow .service-center>h3 {
+
+  font-size: 25px;
+
+}
+
+footer .footer--secondrow .service-center p {
+  color: #606060;
+}
+
+/* 바로가기 버튼 */
+footer .footer--secondrow .service-center .shortcuts {
+
+  font-size: 15px;
+
+}
+
+footer .footer--secondrow .service-center .shortcuts button {
+
+  border: 1px #606060 solid;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: all 500ms;
+}
+
+footer .footer--secondrow .service-center .shortcuts button:hover {
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+footer .footer--secondrow .footer--text {
+  color: #606060;
+}
+
+footer .footer--secondrow .footer--text .text-end {
+
+  margin-top: 10px;
+
+}
+
+
+footer .footer--secondrow .related-sites {
+  text-align: center;
+  line-height: 144px;
+  margin-right: 50px;
+}
+
+
+footer .footer--secondrow .related-sites ul>span {
+
+  border: 1px #fff solid;
+  padding: 15px 40px;
+}
+
+/* ----------------------------------*/
+
+
+
+
+/* 푸터 세번째 행 */
+footer .footer--thirdrow {
+  display: flex;
 }
