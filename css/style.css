@@ -442,6 +442,7 @@ header {
   }
 
 }
+
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
@@ -472,14 +473,14 @@ footer .footer--firstrow>span {
 }
 
 footer .footer--firstrow .footer--right {
-  width: 75%;
+  width: 100%;
 }
 
 footer .footer--firstrow .footer--rightflex {
   display: flex;
   margin-top: 2px;
-  width: 40%;
   float: right;
+  margin-right: 170px;
 }
 
 
@@ -514,6 +515,7 @@ footer .footer--secondrow {
   padding-top: 25px;
   padding-right: 35px;
   padding-bottom: 25px;
+  border-bottom: 1px #686868 solid;
 }
 
 footer .footer--secondrow .service-center {
@@ -548,7 +550,7 @@ footer .footer--secondrow .service-center .shortcuts button {
   padding: 10px;
   padding-left: 25px;
   padding-right: 25px;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-right: 10px;
   transition: all 500ms;
 }
@@ -579,7 +581,7 @@ footer .footer--secondrow .related-sites {
 
 footer .footer--secondrow .related-sites ul>span {
 
-  border: 1px #fff solid;
+  border: 1px #606060 solid;
   padding: 15px 40px;
 }
 
@@ -591,4 +593,38 @@ footer .footer--secondrow .related-sites ul>span {
 /* 푸터 세번째 행 */
 footer .footer--thirdrow {
   display: flex;
+  width: 100%;
+    height: 26%;
+  }
+  
+  footer .copyright {}
+  
+  footer .copyright ul>span {
+    border: 1px #606060 solid;
+    padding: 15px 40px;
+    margin-left: 25px;
+  }
+  
+  footer .copyright ul>span a {
+    line-height: 104px;
+  }
+  
+  footer .sns-box {
+    position: absolute;
+    line-height: 104px;
+    margin-top: 52px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  footer .sns-box i {
+    width: 50px;
+    font-size: 25px;
+    color: #888888;
+    transition: all 500ms;
+    cursor: pointer;
+  }
+  
+  footer .sns-box i:hover {
+    color: #ffffff;
 }
