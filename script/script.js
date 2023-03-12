@@ -46,3 +46,42 @@ document.addEventListener('DOMContentLoaded', () => {
 // 헤더 메인메뉴 슬라이드 script //
 
 
+var swiper = new Swiper(".firstSwiper", {
+
+  on: {
+    slideChange: function () {
+
+      const title = this.slides[this.activeIndex].querySelectorAll('#text p');
+      let tl = gsap.timeline();
+      tl.from(title, 1.8, { duration: 1, opacity: 0, y: 120, ease: "power4.out", skewY: 5, stagger: {
+        amount: 0.3,
+      },
+    
+      
+
+
+
+    });
+    },
+  },
+
+  autoHeight : true,
+  autoWidth : true,
+
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,}
+      ,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+
+});
