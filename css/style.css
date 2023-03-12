@@ -444,14 +444,14 @@ header {
 /*--------------------------캐러셀 슬라이드 1-------------------------*/
 /*------------------------------------------------------------------*/
 
-.box1 {
+.main-slider-1 {
   position: absolute;
   width: 100%;
   height: 100vh;
   top: 45vh;
 }
 
-.first-swiper-container {
+.main-slider-1 .first-swiper-container {
   width: 100%;
   margin-top: 55vh;
 }
@@ -501,7 +501,7 @@ header {
 }
 
 .text1 {
-  position: absolute;
+  position: relative;
   color: #fff;
   font-size: 3em;
   top: 500px;
@@ -525,20 +525,25 @@ header {
   color: #fff;
   font-size: clamp(2rem, 7vh, 4rem);
   top: 130px;
-  transform: translateX(-50%);
   left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   z-index: 10;
   text-shadow: 3px 0 0 rgba(255, 0, 255, 1), -3px 0 0 rgba(0, 255, 255, 1);
 }
 
-/*--------------------------캐러셀 슬라이드 2-------------------------*/
+.slide-text {
+  letter-spacing: 20px;
+}
+
+/*----------------캐러셀 슬라이드 2 & gunpla 문 열기-------------------*/
 /*------------------------------------------------------------------*/
 
 .box2 {
   position: relative;
   top: 450px;
   width: 100%;
-  height: 120%;
+  height: 170%;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -551,6 +556,20 @@ header {
 .gunplalogo {
   margin: 0 auto;
   filter: drop-shadow(0px 3px 20px #000);
+  margin-bottom: 100px;
+}
+
+.door {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.left-door {
+}
+
+.right-door {
 }
 
 /*------------------------------------------------------------------*/
