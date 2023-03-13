@@ -43,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
 var swiper = new Swiper(".firstSwiper", {
   on: {
     slideChange: function () {
-      const title = this.slides[this.activeIndex].querySelectorAll("#text p");
+      const title =
+        this.slides[this.activeIndex].querySelectorAll("#slide1-text p");
       let tl = gsap.timeline();
       tl.from(title, 1.8, {
         duration: 1,
@@ -57,9 +58,8 @@ var swiper = new Swiper(".firstSwiper", {
       });
     },
   },
-
   autoHeight: true,
-  autoWidth: true,
+  // autoWidth: true,
 
   loop: true,
 
@@ -83,15 +83,59 @@ var swiper = new Swiper(".firstSwiper", {
 
 // gunpla 도어 오픈 애니메이션 (scroll trigger) //
 
-
 gsap.registerPlugin(ScrollTrigger);
 gsap.to([".left-door", ".right-door"], {
-scrollTrigger: {
-trigger: ".left-door",
-start: "top center",
-end: "bottom center",
-scrub: true,
-},
-x: function(i) { return i === 0 ? -600 : 600; },
-duration: 5,
+  scrollTrigger: {
+    trigger: ".left-door",
+    start: "top center",
+    end: "bottom center",
+    scrub: true,
+  },
+  x: function (i) {
+    return i === 0 ? -600 : 600;
+  },
+  duration: 5,
+});
+
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+// gunpla swiper slide //
+
+var swiper = new Swiper(".secondSwiper", {
+  loop: true,
+  // autoHeight: true, 이미지 높이로 자동으로 잡음 
+  autoplay: {
+    delay: 2000,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+// 상품 목록 swiper slide //
+
+var swiper = new Swiper(".thirdSwiper", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 50,
+
+  autoplay: {
+    delay: 3000,
+  },
+
+  navigation: {
+    nextEl: ".slide3-button-next",
+    prevEl: ".slide3-button-prev",
+  },
+
 });
