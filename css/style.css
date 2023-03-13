@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -445,17 +444,17 @@ header {
 /*------------------------------------------------------------------*/
 
 .main-slider-1 {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
-  top: 780px;
+  margin-top: 450px;
 }
 
 .firstSwiper {
   position: relative;
   transform: translate(0, -50%);
   width: 90%;
-  height: 95vh;
+  height: 90vh;
   text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
     #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
     #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
@@ -527,9 +526,9 @@ header {
 
 .main-slider-2 {
   position: relative;
-  top: 450px;
+  top: 0px;
   width: 100%;
-  height: 160vh;
+  height: 1500px;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -590,7 +589,7 @@ header {
 
 .main-slider-3 {
   width: 100%;
-  height: 130%;
+  height: 100%;
 }
 
 .thirdSwiper-container {
@@ -598,7 +597,6 @@ header {
   width: 100%;
   height: 650px;
   background-color: #646464;
-  top: 350px;
 }
 
 .thirdSwiper {
