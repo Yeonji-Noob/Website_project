@@ -128,7 +128,8 @@ var swiper = new Swiper(".thirdSwiper", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 50,
-
+  autoHeight: true,
+  autowidth: true,
   autoplay: {
     delay: 3000,
   },
