@@ -359,7 +359,7 @@ header {
   text-transform: uppercase;
 }
 
-/* 정렬을 위한 컴포넌트 클래스 */
+/* 정렬을 위한 클래스 */
 
 .nav-column h2 {
   display: block;
@@ -410,44 +410,17 @@ header {
   color: #303030;
 }
 
-@media (max-width: 1756px) {
-  .h2-margin-2 {
-    right: -90px;
-  }
-}
-
-@media (max-width: 1756px) {
-  .h2-margin-2 {
-    right: -165px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .h2-margin-2 {
-    right: -145px;
-  }
-}
-
-@media (max-width: 1348px) {
-  .h2-margin-2 {
-    right: -230px;
-  }
-}
-
-@media (max-width: 1039px) {
-  .h2-margin-2 {
-    right: -345px;
-  }
-}
-
 /*--------------------------캐러셀 슬라이드 1-------------------------*/
 /*------------------------------------------------------------------*/
+
+
+
 
 .main-slider-1 {
   position: relative;
   width: 100%;
-  height: 100vh;
-  margin-top: 450px;
+  height: 80vh;
+  margin-top: 500px;
 }
 
 .firstSwiper {
@@ -491,7 +464,7 @@ header {
 .slide1-main-text {
   position: absolute;
   color: #fff;
-  font-size: clamp(3rem, 8vh, 4rem);
+  font-size: clamp(3rem, 6vh, 4rem);
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
@@ -503,7 +476,7 @@ header {
 .slide1-sub-text {
   position: absolute;
   color: #fff;
-  font-size: clamp(2rem, 6vh, 4rem);
+  font-size: clamp(2rem, 5vh, 4rem);
   top: 130px;
   left: 50%;
   transform: translateX(-50%);
@@ -526,9 +499,9 @@ header {
 
 .main-slider-2 {
   position: relative;
-  top: 0px;
+  top: 0;
   width: 100%;
-  height: 1500px;
+  height: 1600px;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -758,8 +731,6 @@ footer .footer--thirdrow {
   height: 26%;
 }
 
-footer .copyright {
-}
 
 footer .copyright ul > span {
   border: 1px #606060 solid;
@@ -789,4 +760,62 @@ footer .sns-box i {
 
 footer .sns-box i:hover {
   color: #ffffff;
+}
+
+
+
+/* 미디어쿼리 */
+
+
+
+@media (max-width: 1756px) {
+  .h2-margin-2 {
+    right: -90px;
+  }
+}
+
+@media (max-width: 1756px) {
+  .h2-margin-2 {
+    right: -165px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .h2-margin-2 {
+    right: -145px;
+  }
+}
+
+@media (max-width: 1428px) {
+
+  .main-slider-1 {
+    margin-top: 370px;
+  }
+
+}
+
+@media (max-width: 1347px) {
+
+  .h2-margin-2 {
+    right: -230px;
+  }
+
+  .main-slider-1 {
+    margin-top: 360px;
+  }
+
+  .slide1-main-text {
+    font-size: clamp(3rem, 3vh, 4rem);
+  }
+  
+  .slide1-sub-text {
+    font-size: clamp(2rem, 2vh, 4rem);
+  }
+
+}
+
+@media (max-width: 1039px) {
+  .h2-margin-2 {
+    right: -345px;
+  }
 }
