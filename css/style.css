@@ -415,7 +415,6 @@ header {
 
 
 
-
 .main-slider-1 {
   position: relative;
   width: 100%;
@@ -444,9 +443,7 @@ header {
 .slide1-pagination {
   position: absolute;
   --z-index: 100;
-
 }
-
 
 .slider1-bg img {
   object-fit: cover;
@@ -464,7 +461,7 @@ header {
 .slide1-main-text {
   position: absolute;
   color: #fff;
-  font-size: clamp(3rem, 6vh, 4rem);
+  font-size: clamp(3rem, 8vh, 4rem);
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
@@ -476,7 +473,7 @@ header {
 .slide1-sub-text {
   position: absolute;
   color: #fff;
-  font-size: clamp(2rem, 5vh, 4rem);
+  font-size: clamp(2rem, 7vh, 4rem);
   top: 130px;
   left: 50%;
   transform: translateX(-50%);
@@ -488,8 +485,6 @@ header {
 .slide-text {
   letter-spacing: 20px;
 }
-
-
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
@@ -580,17 +575,14 @@ header {
 }
 
 .slide3-bg {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
-
 
 .slide3-button-next {
-
 }
-
-
-
-
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
@@ -731,7 +723,6 @@ footer .footer--thirdrow {
   height: 26%;
 }
 
-
 footer .copyright ul > span {
   border: 1px #606060 solid;
   padding: 15px 40px;
@@ -762,11 +753,7 @@ footer .sns-box i:hover {
   color: #ffffff;
 }
 
-
-
 /* 미디어쿼리 */
-
-
 
 @media (max-width: 1756px) {
   .h2-margin-2 {
@@ -787,15 +774,12 @@ footer .sns-box i:hover {
 }
 
 @media (max-width: 1428px) {
-
   .main-slider-1 {
     margin-top: 370px;
   }
-
 }
 
 @media (max-width: 1347px) {
-
   .h2-margin-2 {
     right: -230px;
   }
@@ -807,11 +791,10 @@ footer .sns-box i:hover {
   .slide1-main-text {
     font-size: clamp(3rem, 3vh, 4rem);
   }
-  
+
   .slide1-sub-text {
     font-size: clamp(2rem, 2vh, 4rem);
   }
-
 }
 
 @media (max-width: 1039px) {
