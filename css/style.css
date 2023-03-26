@@ -413,8 +413,6 @@ header {
 /*--------------------------캐러셀 슬라이드 1-------------------------*/
 /*------------------------------------------------------------------*/
 
-
-
 .main-slider-1 {
   position: relative;
   width: 100%;
@@ -547,6 +545,84 @@ header {
   width: 30px;
   height: 40px;
   margin: 0 10px !important;
+}
+
+/* ---------------------- */
+/* ------내부 이미지------ */
+/* ---------------------- */
+
+
+
+/* 수성의 마녀 로고 */
+.mercury-logo {
+  position: absolute;
+  top: 460px;
+  left: 10px;
+  z-index: 20;
+}
+
+.mercury-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+
+/* ----unleashed gundam slide----- */
+
+/* unleashed gundam img */
+.unleashed-gundam {
+  position: absolute;
+  top: 175px;
+  z-index: 20;
+}
+
+.unleashed-gundam-text1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  z-index: 20;
+}
+
+.unleashed-gundam-text2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 500px;
+  z-index: 20;
+
+}
+
+/* ----MGEX strike freedom gundam slide----- */
+
+.mgex-logo {
+  position: absolute;
+  top: 560px;
+  left: 40px;
+  z-index: 20;
+}
+
+.mgex-gundam {
+position: absolute;
+top: 50px;
+z-index: 19;
+}
+
+.mgex-gundam-text1{
+  position: absolute;
+  top: 50px;
+  z-index: 21;
+}
+
+.mgex-gundam-text2{
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 21;
 }
 
 /*------------------------------------------------------------------*/

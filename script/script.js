@@ -41,7 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // 헤더 메인메뉴 슬라이드 script //
 
 var swiper = new Swiper(".firstSwiper", {
+
+  // swiper의 on 
   on: {
+    // slideChange는 활성화된 슬라이드가 바뀔 때마다 호출하는 이벤트
     slideChange: function () {
       const title =
         this.slides[this.activeIndex].querySelectorAll("#slide1-text p");
@@ -58,6 +61,8 @@ var swiper = new Swiper(".firstSwiper", {
       });
     },
   },
+
+
   autoHeight: true,
   // autoWidth: true,
 
@@ -104,10 +109,108 @@ gsap.to([".left-door", ".right-door"], {
 // gunpla swiper slide //
 
 var swiper = new Swiper(".secondSwiper", {
+
+  on: {
+    slideChange: function () {
+
+      gsap.fromTo(".mercury-logo", {
+        autoAlpha: 0,
+        y: 30
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 1
+      })
+
+      gsap.fromTo(".mercury-text", {
+        autoAlpha: 0,
+        opacity: 0,
+      }, {
+        autoAlpha: 1,
+        opacity:1,
+        duration: 3,
+        delay: 0.5
+      })
+
+
+
+      gsap.fromTo(".unleashed-gundam-text1", {
+        autoAlpha: 0,
+        y: 30
+      }, {
+        autoAlpha: 1,
+        duration: 0.5,
+        y: 0,
+        delay: 0.5
+      })
+
+      gsap.fromTo(".unleashed-gundam-text2", {
+        autoAlpha: 0,
+        y: 30
+      }, {
+        autoAlpha: 1,
+        duration: 2,
+        y: 0,
+        delay: 0.5
+      })
+
+
+      gsap.fromTo(".unleashed-gundam", {
+        autoAlpha: 0,
+        x: 30
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        x: 0,
+        delay: 1
+      })
+
+
+      gsap.fromTo(".mgex-gundam", {
+        autoAlpha: 0,
+        y: 30
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 1
+      })
+
+      gsap.fromTo(".mgex-gundam-text1", {
+        autoAlpha: 0,
+        y: 40,
+        ease: "circ.out",
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 0
+      })
+
+      gsap.fromTo(".mgex-gundam-text2", {
+        autoAlpha: 0,
+        y:40,
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 2
+      })
+
+
+    }
+
+  },
+
+  effect: 'fade',
+
   loop: true,
+
   // autoHeight: true, 이미지 높이로 자동으로 잡음 
   autoplay: {
-    delay: 2000,
+    delay: 4000,
+    disableOnInteraction: false,
   },
 
   pagination: {
@@ -125,6 +228,9 @@ var swiper = new Swiper(".secondSwiper", {
 // 상품 목록 swiper slide //
 
 var swiper = new Swiper(".thirdSwiper", {
+
+
+
   loop: true,
   slidesPerView: 3,
   spaceBetween: 50,
