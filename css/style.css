@@ -553,6 +553,8 @@ header {
 
 
 
+
+
 /* 수성의 마녀 로고 */
 .mercury-logo {
   position: absolute;
@@ -596,7 +598,10 @@ header {
 
 }
 
-/* ----MGEX strike freedom gundam slide----- */
+/*------------------------------------------------------------------*/
+/* -----------MGEX strike freedom gundam slide--------------------- */
+/*------------------------------------------------------------------*/
+
 
 .mgex-logo {
   position: absolute;
@@ -626,21 +631,113 @@ z-index: 19;
 }
 
 /*------------------------------------------------------------------*/
+/* -------------------PG unicorn gundam slide---------------------- */
+/*------------------------------------------------------------------*/
+
+.unicorn-pg-logo {
+  position: absolute;
+  top: 20px;
+  z-index: 21;
+}
+
+.unicorn-gundam {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+
+.unicorn-eye {
+  position: absolute;
+  top: 200px;
+  left: 288px;
+  z-index: 20;
+}
+
+.unicorn-eye-effect {
+  position: absolute;
+  top: 215px;
+  left: 125px;
+  z-index: 20;
+}
+
+.unicorn-text {
+  position: absolute;
+  top: 530px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.unicorn-text2 {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+
+.sazabi {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+
+.sazabi-mg-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 20;
+}
+
+.sazabi-text1 {
+  position: absolute;
+  top: 560px;
+  left: 105px;
+  z-index: 20;
+}
+
+.sazabi-text2 {
+  position: absolute;
+  top: 560px;
+  left: 20px;
+  z-index: 20;
+}
+
+.sazabi-eye {
+  position: absolute;
+  top: 316px;
+  left: 464px;
+  z-index: 20;
+}
+
+.sazabi-eye-effect {
+  position: absolute;
+  top: 318px;
+  left: 255px;
+  z-index: 20;
+}
+
+/*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 /*------------------------캐러셀 슬라이드 3--------------------------*/
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 
 .main-slider-3 {
+  position: relative;
+  top: 50px;
   width: 100%;
   height: 100%;
 }
 
 .thirdSwiper-container {
   position: relative;
-  width: 100%;
-  height: 650px;
-  background-color: #646464;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 99%;
+  height: 640px;
+  background: rgb(255,255,255);
 }
 
 .thirdSwiper {
@@ -648,13 +745,14 @@ z-index: 19;
   top: 25px;
   width: 80%;
   height: 500px;
+
 }
 
 .slide3-bg {
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+
 }
 
 .slide3-button-next {

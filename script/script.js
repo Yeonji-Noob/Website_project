@@ -113,6 +113,7 @@ var swiper = new Swiper(".secondSwiper", {
   on: {
     slideChange: function () {
 
+      // 수성의 마녀
       gsap.fromTo(".mercury-logo", {
         autoAlpha: 0,
         y: 30
@@ -121,7 +122,7 @@ var swiper = new Swiper(".secondSwiper", {
         duration: 1,
         y: 0,
         delay: 1
-      })
+      });
 
       gsap.fromTo(".mercury-text", {
         autoAlpha: 0,
@@ -131,10 +132,10 @@ var swiper = new Swiper(".secondSwiper", {
         opacity:1,
         duration: 3,
         delay: 0.5
-      })
+      });
 
 
-
+      // unleashed gundam
       gsap.fromTo(".unleashed-gundam-text1", {
         autoAlpha: 0,
         y: 30
@@ -143,7 +144,7 @@ var swiper = new Swiper(".secondSwiper", {
         duration: 0.5,
         y: 0,
         delay: 0.5
-      })
+      });
 
       gsap.fromTo(".unleashed-gundam-text2", {
         autoAlpha: 0,
@@ -153,9 +154,9 @@ var swiper = new Swiper(".secondSwiper", {
         duration: 2,
         y: 0,
         delay: 0.5
-      })
+      });
 
-
+      
       gsap.fromTo(".unleashed-gundam", {
         autoAlpha: 0,
         x: 30
@@ -164,9 +165,10 @@ var swiper = new Swiper(".secondSwiper", {
         duration: 1,
         x: 0,
         delay: 1
-      })
+      });
 
 
+      // MGEX strike freedom gundam
       gsap.fromTo(".mgex-gundam", {
         autoAlpha: 0,
         y: 30
@@ -175,7 +177,7 @@ var swiper = new Swiper(".secondSwiper", {
         duration: 1,
         y: 0,
         delay: 1
-      })
+      });
 
       gsap.fromTo(".mgex-gundam-text1", {
         autoAlpha: 0,
@@ -186,7 +188,7 @@ var swiper = new Swiper(".secondSwiper", {
         duration: 1,
         y: 0,
         delay: 0
-      })
+      });
 
       gsap.fromTo(".mgex-gundam-text2", {
         autoAlpha: 0,
@@ -196,8 +198,98 @@ var swiper = new Swiper(".secondSwiper", {
         duration: 1,
         y: 0,
         delay: 2
-      })
+      });
 
+
+      // PG unicorn gundam
+      gsap.fromTo(".unicorn-gundam", {
+        autoAlpha: 0,
+      }, {
+        autoAlpha: 1,
+        duration: 2,
+        delay: 2
+      });
+
+
+      gsap.fromTo(".unicorn-text", {
+        autoAlpha: 0,
+        y:40,
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 1
+      });
+
+      gsap.fromTo(".unicorn-eye-effect", {
+        autoAlpha: 0,
+      }, {
+        autoAlpha: 1,
+        duration: 0.5,
+        delay: 0.5
+      });
+
+
+      gsap.fromTo(".unicorn-text2", {
+        autoAlpha: 0,
+        y:0,
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 3
+      });
+
+
+
+      gsap.fromTo(".sazabi", {
+        autoAlpha: 0,
+      }, {
+        autoAlpha: 1,
+        duration: 2,
+        delay: 1
+      });
+
+      gsap.fromTo(".sazabi-text1", {
+        autoAlpha: 0,
+        y:40,
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 0.5
+      });
+
+      gsap.fromTo(".sazabi-text2", {
+        autoAlpha: 0,
+        y:40,
+      }, {
+        autoAlpha: 1,
+        duration: 1,
+        y: 0,
+        delay: 1
+      });
+
+
+      gsap.fromTo(".sazabi-eye", {
+        autoAlpha: 0,
+        scale:0,
+        delay:1,
+      }, {
+        autoAlpha: 1,
+        scale:1,
+        duration: 0.5,
+        delay: 2
+      });
+
+      gsap.fromTo(".sazabi-eye-effect", {
+        autoAlpha: 0,
+        delay:1,
+      }, {
+        autoAlpha: 1,
+        duration: 0.5,
+        delay: 3
+      });
 
     }
 
