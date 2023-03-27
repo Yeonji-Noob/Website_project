@@ -6,6 +6,7 @@
   width: 100%;
   overflow: hidden;
 }
+/*-------------component CSS---------------*/
 
 /*------------- 마퀴태그효과 ---------------*/
 
@@ -98,6 +99,8 @@ header {
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 }
 
+
+
 .header--menu-top li a {
   transition: var(--transition);
   cursor: pointer;
@@ -108,30 +111,17 @@ header {
   margin-left: 51px;
 }
 
-.header--menu-top li a:first-child:hover {
-  text-shadow: var(--shadow);
-}
-
 /* 'TV' 글자 */
 .header--menu-top a:nth-child(3) {
   margin-left: 42px;
 }
 
-.header--menu-top a:nth-child(3):hover {
-  text-shadow: var(--shadow);
+/* header--menu-top의 a태그에 hover */
+
+.header--menu-top li a:hover {
+  text-shadow: var(--shadow);  
 }
 
-/* 매거진 글자 */
-
-.header--menu-top a:nth-child(4):hover {
-  text-shadow: var(--shadow);
-}
-
-/* 기획전/이벤트 글자 */
-
-.header--menu-top a:last-child:hover {
-  text-shadow: var(--shadow);
-}
 
 /*----------------------------*/
 /*----------------------------*/
@@ -160,9 +150,7 @@ header {
 .header--info img {
   width: 18px;
   height: 15px;
-  margin-top: 17px;
-  margin-right: 5px;
-  margin-left: 10px;
+  margin: 17px 5px 0 10px;
 }
 
 /*----------------------------*/
@@ -177,12 +165,6 @@ header {
   width: 100%;
   height: 60px;
   border-bottom: 1px #747474 solid;
-}
-
-.header--line {
-  position: fixed;
-  width: 95%;
-  height: 60px;
 }
 
 /* 검색입력창 */
@@ -281,8 +263,8 @@ header {
   font-size: 15px;
   color: #fcfcfc;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
-
   background: #202020;
+
   border-right: 1px solid #444444;
 
   -webkit-transition: all 0.3s ease;
@@ -376,19 +358,20 @@ header {
   float: left;
 }
 
+h2[class^="h2-margin"] {
+  display: inline-block;
+  margin-top: 10px;
+}
+
 /* 타마시이네이션즈 */
 .h2-margin-1 {
-  margin-top: 10px;
-  display: inline-block;
   width: 600px;
   margin-left: 15px;
 }
 
 /* 반프레스토 */
 .h2-margin-2 {
-  margin-top: 10px;
   position: fixed;
-  display: inline-block;
   width: 700px;
   right: -30px;
 }
@@ -448,12 +431,6 @@ header {
   width: 100%;
   height: 100%;
   max-width: 100%;
-}
-
-:root {
-  --object-fit: cover;
-  --width: 100%;
-  --height: 100%;
 }
 
 .slide1-main-text {
@@ -551,171 +528,153 @@ header {
 /* ------내부 이미지------ */
 /* ---------------------- */
 
-
-
-
+.slide2-bg img:first-child {
+  z-index: 0;
+}
 
 /* 수성의 마녀 로고 */
-.mercury-logo {
+
+img[class^="mercury"] {
   position: absolute;
+}
+
+.mercury-logo {
   top: 460px;
   left: 10px;
-  z-index: 20;
 }
 
 .mercury-text {
-  position: absolute;
   top: 40%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 20;
 }
-
 
 /* ----unleashed gundam slide----- */
 
 /* unleashed gundam img */
-.unleashed-gundam {
+
+img[class^="unleashed"] {
   position: absolute;
+}
+
+img[class^="unleashed-gundam-text"] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.unleashed-gundam {
   top: 175px;
-  z-index: 20;
 }
 
 .unleashed-gundam-text1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   top: 50px;
-  z-index: 20;
 }
 
 .unleashed-gundam-text2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   top: 500px;
-  z-index: 20;
-
 }
 
 /*------------------------------------------------------------------*/
 /* -----------MGEX strike freedom gundam slide--------------------- */
 /*------------------------------------------------------------------*/
 
+img[class^="mgex"] {
+  position: absolute;
+}
 
 .mgex-logo {
-  position: absolute;
   top: 560px;
   left: 40px;
-  z-index: 20;
+  z-index: 2;
 }
 
 .mgex-gundam {
-position: absolute;
-top: 50px;
-z-index: 19;
-}
-
-.mgex-gundam-text1{
-  position: absolute;
   top: 50px;
-  z-index: 21;
 }
 
-.mgex-gundam-text2{
-  position: absolute;
+.mgex-gundam-text1 {
+  top: 50px;
+  z-index: 2;
+}
+
+.mgex-gundam-text2 {
   top: 200px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 21;
+  z-index: 2;
 }
 
 /*------------------------------------------------------------------*/
 /* -------------------PG unicorn gundam slide---------------------- */
 /*------------------------------------------------------------------*/
 
-.unicorn-pg-logo {
+img[class^="unicorn"] {
   position: absolute;
+}
+
+img[class^="unicorn-text"] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.unicorn-pg-logo {
   top: 20px;
   z-index: 21;
 }
 
 .unicorn-gundam {
-  position: absolute;
   top: 0;
-  z-index: 20;
 }
 
 .unicorn-eye {
-  position: absolute;
   top: 200px;
   left: 288px;
-  z-index: 20;
 }
 
 .unicorn-eye-effect {
-  position: absolute;
   top: 215px;
   left: 125px;
-  z-index: 20;
 }
 
 .unicorn-text {
-  position: absolute;
   top: 530px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
 }
 
 .unicorn-text2 {
-  position: absolute;
   top: 300px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
 }
 
+img[class^="sazabi"] {
+  position: absolute;
+}
 
 .sazabi {
-  position: absolute;
   top: 0;
-  z-index: 20;
 }
 
 .sazabi-mg-logo {
-  position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 20;
 }
 
 .sazabi-text1 {
-  position: absolute;
   top: 560px;
   left: 105px;
-  z-index: 20;
 }
 
 .sazabi-text2 {
-  position: absolute;
   top: 560px;
   left: 20px;
-  z-index: 20;
 }
 
 .sazabi-eye {
-  position: absolute;
   top: 316px;
   left: 464px;
-  z-index: 20;
 }
 
 .sazabi-eye-effect {
-  position: absolute;
   top: 318px;
   left: 255px;
-  z-index: 20;
 }
 
 /*------------------------------------------------------------------*/
@@ -737,7 +696,7 @@ z-index: 19;
   transform: translateX(-50%);
   width: 99%;
   height: 640px;
-  background: rgb(255,255,255);
+  background: rgb(255, 255, 255);
 }
 
 .thirdSwiper {
@@ -745,14 +704,12 @@ z-index: 19;
   top: 25px;
   width: 80%;
   height: 500px;
-
 }
 
 .slide3-bg {
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-
 }
 
 .slide3-button-next {
@@ -855,11 +812,8 @@ footer .footer--secondrow .service-center .shortcuts {
 
 footer .footer--secondrow .service-center .shortcuts button {
   border: 1px #606060 solid;
-  padding: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 25px;
-  margin-right: 10px;
+  padding: 10px 25px;
+  margin: 25px 10px 0 0;
   transition: all 500ms;
 }
 
