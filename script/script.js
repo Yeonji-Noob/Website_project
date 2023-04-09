@@ -63,7 +63,6 @@ var swiper = new Swiper(".firstSwiper", {
   },
 
 
-  autoHeight: true,
   // autoWidth: true,
 
   loop: true,

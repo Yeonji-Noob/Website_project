@@ -99,8 +99,6 @@ header {
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 }
 
-
-
 .header--menu-top li a {
   transition: var(--transition);
   cursor: pointer;
@@ -119,9 +117,8 @@ header {
 /* header--menu-top의 a태그에 hover */
 
 .header--menu-top li a:hover {
-  text-shadow: var(--shadow);  
+  text-shadow: var(--shadow);
 }
-
 
 /*----------------------------*/
 /*----------------------------*/
@@ -398,16 +395,17 @@ h2[class^="h2-margin"] {
 
 .main-slider-1 {
   position: relative;
-  width: 100%;
-  height: 80vh;
-  margin-top: 500px;
+  width: 99vw;
+  top: 23vw;
+  margin-bottom: 500px;
 }
 
 .firstSwiper {
   position: relative;
+  top: 0;
   transform: translate(0, -50%);
   width: 90%;
-  height: 90vh;
+  height: 40vw;
   text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
     #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
     #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
@@ -461,6 +459,16 @@ h2[class^="h2-margin"] {
   letter-spacing: 20px;
 }
 
+/* 슬라이드 배경 */
+.slide1-bg {
+  position: absolute;
+  top: 270px;
+  width: 100%;
+
+}
+
+.slide1-bg img { width: 100%;   object-fit: cover;}
+
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 /*----------------캐러셀 슬라이드 2 & gunpla 문 열기-------------------*/
@@ -484,19 +492,31 @@ h2[class^="h2-margin"] {
 }
 
 .gunplalogo {
+  position: relative;
   margin: 0 auto;
   filter: drop-shadow(0px 3px 20px #000);
   margin-bottom: 100px;
 }
 
+picture {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 100%;
+}
+
 .door {
+  width: 100%;
   display: flex;
   position: absolute;
   justify-content: center;
+  margin: 0 auto;
   margin-top: 50px;
   overflow: hidden;
   z-index: 10;
 }
+
 
 .secondSwiper {
   position: absolute;
@@ -679,6 +699,11 @@ img[class^="sazabi"] {
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
+
+.WB-sale_banner {
+  width: 100%;
+}
+
 /*------------------------캐러셀 슬라이드 3--------------------------*/
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
@@ -881,7 +906,13 @@ footer .sns-box i:hover {
   color: #ffffff;
 }
 
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
 /* 미디어쿼리 */
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
 
 @media (max-width: 1756px) {
   .h2-margin-2 {
@@ -913,7 +944,8 @@ footer .sns-box i:hover {
   }
 
   .main-slider-1 {
-    margin-top: 360px;
+    top: -200px;
+    margin-bottom: 300px;
   }
 
   .slide1-main-text {
@@ -925,8 +957,29 @@ footer .sns-box i:hover {
   }
 }
 
+@media (max-width: 1428px) {
+  .main-slider-1 {
+    top: 0;
+    margin-bottom: 300px;
+  }
+
+  .firstSwiper {
+    top: -60px;
+}
+
 @media (max-width: 1039px) {
   .h2-margin-2 {
     right: -345px;
   }
+}
+
+/* -------------------------- */
+/* 모바일 */
+@media (max-width: 500px) {
+
+ .header-top {}
+ .header--menu-top {display: none;}
+ .nav {display:none;}
+
+
 }
