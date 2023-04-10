@@ -8,6 +8,10 @@
 + 사이트 선정은 Bandai Namco Korea 사이트로 하였습니다.
 
 
+## 🍰 Style guide
+![style-guide](https://user-images.githubusercontent.com/121682565/230940162-57e1517c-6942-4a3b-86cb-dd561d63d487.jpg)
+
+
 ## 📚 Used Languages
 <p>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/>
