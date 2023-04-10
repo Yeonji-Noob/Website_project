@@ -9,7 +9,7 @@
 
 
 ## 🍰 Style guide
-![style_guide](https://user-images.githubusercontent.com/121682565/230859417-73a4b72f-3e6c-491b-8c94-768654fe8b0c.jpg)
+![style-guide](https://user-images.githubusercontent.com/121682565/230940162-57e1517c-6942-4a3b-86cb-dd561d63d487.jpg)
 
 
 ## 📚 Used Languages
