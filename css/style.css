@@ -464,10 +464,12 @@ h2[class^="h2-margin"] {
   position: absolute;
   top: 270px;
   width: 100%;
-
 }
 
-.slide1-bg img { width: 100%;   object-fit: cover;}
+.slide1-bg img {
+  width: 100%;
+  object-fit: cover;
+}
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
@@ -516,7 +518,6 @@ picture {
   overflow: hidden;
   z-index: 10;
 }
-
 
 .secondSwiper {
   position: absolute;
@@ -906,6 +907,10 @@ footer .sns-box i:hover {
   color: #ffffff;
 }
 
+.footer--mobile-text {
+  display: none;
+}
+
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
@@ -965,6 +970,7 @@ footer .sns-box i:hover {
 
   .firstSwiper {
     top: -60px;
+  }
 }
 
 @media (max-width: 1039px) {
@@ -973,13 +979,115 @@ footer .sns-box i:hover {
   }
 }
 
+@media (max-width: 1024px) {
+  /* -----푸터 부분 -----*/
+
+  footer {
+    height: 700px;
+  }
+
+  /* 푸터 1행 */
+
+  footer .footer--firstrow {
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer .footer--firstrow > span {
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  footer .footer--firstrow .footer--rightflex {
+    float: none;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  footer .footer--firstrow .footer--rightflex p:nth-child(n + 5) {
+    display: none;
+  }
+
+  .footer--mobile-text {
+    display: flex;
+    position: absolute;
+    top: 150px;
+  }
+
+  /* 푸터 두번째 행 */
+  footer .footer--secondrow {
+    flex-direction: column-reverse;
+    height: 55%;
+  }
+
+  footer .footer--secondrow .footer--text {
+    margin-left: 25px;
+    font-size: 14px;
+  }
+
+  footer .footer--secondrow .related-sites {
+    display: none;
+  }
+
+  /* 푸터 3행 */
+  .copyright {
+    display: none;
+  }
+
+  footer .footer--thirdrow {
+    justify-content: center;
+    height: 15%;
+  }
+
+  footer .sns-box {
+    display: flex;
+    height: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer .sns-box i {
+    text-align: center;
+    line-height: 0;
+  }
+}
+
 /* -------------------------- */
 /* 모바일 */
 @media (max-width: 500px) {
+  .header--menu-top {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
 
- .header-top {}
- .header--menu-top {display: none;}
- .nav {display:none;}
+  /* 푸터 영역 */
+  footer .footer--secondrow .footer--text {
+    margin-top: 5px;
+    font-size: 12px;
+  }
 
+  footer .footer--right {
+    display: block;
+    width: 100%;
+  }
 
+  footer .footer--firstrow .footer--rightflex {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer--mobile-text {
+    top: 35px;
+  }
 }
